@@ -9,6 +9,10 @@ generator client {
   provider = "prisma-client-js"
 }
 
+generator photos {
+  provider = "prisma-photos-types"
+}
+
 enum Role {
   USER
   ADMIN

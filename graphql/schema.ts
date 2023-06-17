@@ -1,15 +1,5 @@
-export const typeDefs = `
-  type Crop {
-    id: ID,
-    title: String,
-    description: String
-    url: String
-    imageUrl: String
-    category: String
-    users: [String]
-  }
+import "./types/Crop"
+import "./types/User"
+import { builder } from "./builder"
 
-  type Query {
-    crops: [Crop]!
-  }
-`
+export const schema = builder.toSchema()
